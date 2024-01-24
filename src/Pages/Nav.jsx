@@ -3,11 +3,11 @@ import Link from "../Components/Link";
 import logo from "../assets/images/logo-bookmark.svg";
 function Nav() {
   return (
-    <div className="absolute top-0 left-0 w-screen bg-white flex items-center justify-between">
+    <div className="absolute px-20 h-[10vh] top-0 left-0 w-screen bg-white flex items-center justify-between">
       <div>
-        <img src="" alt="" />
+        <img src={logo} alt="" />
       </div>
-      <ul>
+      <ul className="flex justify-between items-center gap-10  ">
         {[
           {
             name: "Features",
@@ -15,17 +15,17 @@ function Nav() {
             link: "#",
           },
           {
-            name: "Features",
+            name: "Pricing",
             special: true,
             link: "#",
           },
           {
-            name: "Features",
+            name: "Contact",
             special: true,
             link: "#",
           },
           {
-            name: "Features",
+            name: "Login",
             special: true,
             link: "#",
           },
