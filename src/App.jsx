@@ -1,11 +1,12 @@
-
 // export default App
-import React, { useState } from 'react';
-import Home from './home';
-import './App.css'
-const App = () =>{
+import React, { useState } from "react";
+import "./App.css";
+import Home from "./Pages/Home";
+const App = () => {
   return (
-    <Home/>
+    <>
+      <Home />
+    </>
   );
-}
+};
 export default App;
