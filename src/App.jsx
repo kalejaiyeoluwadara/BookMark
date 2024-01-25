@@ -6,6 +6,8 @@ import Nav from "./Pages/Nav";
 import Feature from "./Pages/Feature";
 import Download from "./Pages/Download";
 import Faq from "./Pages/Faq";
+import Contact from "./Pages/Contact";
+import Footer from "./Pages/Footer";
 const App = () => {
   return (
     <>
@@ -14,6 +16,8 @@ const App = () => {
       <Feature />
       <Download />
       <Faq />
+      <Contact />
+      <Footer />
     </>
   );
 };

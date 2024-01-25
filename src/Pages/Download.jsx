@@ -24,7 +24,7 @@ function Download() {
     },
   ]);
   return (
-    <div className="h-[100vh] flex flex-col mt-20 items-center justify-center w-screen ">
+    <div className="h-auto py-40 flex flex-col  items-center justify-center w-screen ">
       <Header
         name={"Download the extension"}
         content={`We’ve got more browsers in the pipeline. Please do let us know if you’ve 
