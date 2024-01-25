@@ -4,14 +4,14 @@ import dot from "../assets/images/bg-dots.svg";
 import Button from "../Components/Button";
 function Home() {
   return (
-    <div className="w-screen h-[100vh] bgi flex py-20 px-10 items-center justify-center">
+    <div className="w-screen h-[100vh] mt-4 bgi flex py-20 px-10 items-center justify-center">
       {/* Text content Div */}
       {/* <img className="absolute right-10 top-10" src={dot} alt="" /> */}
       <div className="sm:w-[40%] flex flex-col ">
         <h1 className="font-[600] opacity-[0.9] w-[400px] text-[40px] ">
           A Simple Bookmark Manager
         </h1>
-        <p className="w-[380px] mt-2 tex-[22px] font-[500] opacity-[0.8]">
+        <p className="w-[500px] mt-2 text-[22px] font-[500] opacity-[0.8]">
           A clean and simple interface to organize your favourite websites. Open
           a new browser tab and see your sites load instantly. Try it for free.
         </p>
