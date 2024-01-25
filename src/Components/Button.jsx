@@ -3,7 +3,7 @@ import React from "react";
 function Button({ name, blue }) {
   return (
     <button
-      className={`w-[160px] ${
+      className={`w-auto px-6 ${
         blue
           ? "bg-blue-600 hover:text-indigo-600  "
           : "bg-gray-400  hover:text-black      "

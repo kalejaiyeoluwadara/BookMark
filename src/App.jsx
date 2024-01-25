@@ -5,6 +5,7 @@ import Home from "./Pages/Home";
 import Nav from "./Pages/Nav";
 import Feature from "./Pages/Feature";
 import Download from "./Pages/Download";
+import Faq from "./Pages/Faq";
 const App = () => {
   return (
     <>
@@ -12,6 +13,7 @@ const App = () => {
       <Home />
       <Feature />
       <Download />
+      <Faq />
     </>
   );
 };
