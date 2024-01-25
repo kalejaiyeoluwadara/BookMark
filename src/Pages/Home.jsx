@@ -16,8 +16,8 @@ function Home() {
           a new browser tab and see your sites load instantly. Try it for free.
         </p>
         <section className="mt-4 flex gap-4 w-full ">
-          <Button name={"Get it on Chrome"} />
-          <Button name={"Get it on Firefox"} />
+          <Button name={"Get it on Chrome"} blue={true} />
+          <Button name={"Get it on Firefox"} blue={false} />
         </section>
       </div>
       {/* Illustration Div */}
