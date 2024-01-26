@@ -17,6 +17,12 @@ h3{
     background-repeat: no-repeat;
     background-position: right;
 }
+.bgl{
+    background-image: url('../src/assets/images/bg-dots.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+}
 @media (max-width: 640px){
    .diff{
     position: absolute;
