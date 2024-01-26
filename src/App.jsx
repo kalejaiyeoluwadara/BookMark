@@ -14,10 +14,18 @@ const App = () => {
   return (
     <AnimatePresence>
       <Nav />
-      <Home />
-      <Feature />
-      <Download />
-      <Faq />
+      <Reveal>
+        <Home />
+      </Reveal>
+      <Reveal>
+        <Feature />
+      </Reveal>
+      <Reveal>
+        <Download />
+      </Reveal>
+      <Reveal>
+        <Faq />
+      </Reveal>
       <Contact />
       <Footer />
     </AnimatePresence>

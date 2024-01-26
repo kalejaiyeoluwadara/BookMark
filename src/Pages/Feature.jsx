@@ -75,9 +75,12 @@ function Feature() {
             opacity: 1,
             y: 0,
           }}
-          // transition={{
-          //   duration: 0.3,
-          // }}
+          exit={{
+            y: "-100px",
+          }}
+          transition={{
+            duration: 0.5,
+          }}
           className="flex w-full mb-8  mt-20 sm:gap-20 items-center justify-center"
         >
           <section className="sm:w-[40%] flex justify-end  ">
