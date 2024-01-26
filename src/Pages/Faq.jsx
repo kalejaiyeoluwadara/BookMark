@@ -34,7 +34,7 @@ function Faq() {
   return (
     <div
       id="faq"
-      className="h-auto py-40 w-screen flex flex-col items-center justify-center "
+      className="h-auto  py-10 w-screen flex flex-col items-center justify-center "
     >
       <Header
         name={"Frequently Asked Questions"}
