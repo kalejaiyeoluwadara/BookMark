@@ -2,6 +2,7 @@ import React from "react";
 import illustration from "../assets/images/illustration-hero.svg";
 import dot from "../assets/images/bg-dots.svg";
 import Button from "../Components/Button";
+import { motion } from "framer-motion";
 function Home() {
   return (
     <div

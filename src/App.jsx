@@ -8,9 +8,11 @@ import Download from "./Pages/Download";
 import Faq from "./Pages/Faq";
 import Contact from "./Pages/Contact";
 import Footer from "./Pages/Footer";
+import { motion, AnimatePresence } from "framer-motion";
+import Reveal from "./reveal";
 const App = () => {
   return (
-    <>
+    <AnimatePresence>
       <Nav />
       <Home />
       <Feature />
@@ -18,7 +20,7 @@ const App = () => {
       <Faq />
       <Contact />
       <Footer />
-    </>
+    </AnimatePresence>
   );
 };
 export default App;
