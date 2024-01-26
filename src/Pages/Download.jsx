@@ -24,14 +24,14 @@ function Download() {
     },
   ]);
   return (
-    <div className="h-auto py-40 flex flex-col  items-center justify-center w-screen ">
+    <div className="h-auto pt-2 pb-20 flex flex-col  items-center justify-center w-screen ">
       <Header
         name={"Download the extension"}
         content={`We’ve got more browsers in the pipeline. Please do let us know if you’ve 
   got a favourite you’d like us to prioritize.`}
       />
       {/* Slots Section */}
-      <section className="flex mt-20 gap-10">
+      <section className="flex mt-20 sm:flex-row flex-col gap-10">
         {items.map((slot, id) => {
           const { img, title, text } = slot;
           return (

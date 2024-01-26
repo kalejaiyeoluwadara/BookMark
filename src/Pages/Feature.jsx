@@ -36,7 +36,7 @@ function Feature() {
   return (
     <div
       id="features"
-      className="h-[90vh] w-screen flex flex-col items-center justify-center"
+      className="h-auto py-20 w-screen flex flex-col items-center justify-center"
     >
       {/* First Section */}
       <Header
@@ -49,7 +49,7 @@ function Feature() {
       {/* Second Section */}
       <section className="bg-white w-full flex items-center justify-center flex-col">
         {/* Nav section */}
-        <nav className="flex h-[15vh] border-b-[1px] mt-12 sm:w-auto gap-10 items-end justify-center border-opacity-[0.3] ">
+        <nav className="flex  sm:flex-row flex-col h-[auto] sm:h-[15vh] border-b-[1px] mt-12 sm:w-auto w-full gap-10  items-center sm:items-end justify-center border-opacity-[0.3] ">
           {items.map((nav, id) => {
             const { name, count } = nav;
             return (
@@ -81,17 +81,17 @@ function Feature() {
           transition={{
             duration: 0.5,
           }}
-          className="flex w-full mb-8  mt-20 sm:gap-20 items-center justify-center"
+          className="flex w-full mb-8 sm:flex-row flex-col mt-20 sm:gap-20 items-center  justify-center"
         >
-          <section className="sm:w-[40%] flex justify-end  ">
+          <section className="sm:w-[40%]  flex  justify-end  ">
             <img className="h-[300px]" src={items[countstate].img} alt="" />
           </section>
-          <section className="flex w-[50%] flex-col gap-3 items-start justify-center">
-            <h3 className="font-[600] capitalize text-[30px] ">
+          <section className="flex sm:w-[50%] sm:gap-0  flex-col gap-3 items-center sm:items-start justify-center">
+            <h3 className="font-[600] sm:mt-0 mt-6 sm:text-start text-center capitalize sm:text-[30px] text-[25px] ">
               {" "}
               {items[countstate].header}
             </h3>
-            <p className="w-[500px] text-[18px] ">
+            <p className="sm:w-[500px] sm:mb-0 mb-4 w-[90%] sm:text-start text-center text-[17px] = sm:text-[18px] ">
               {items[countstate].content}
             </p>
             <Button name={"More info"} blue={true} />
@@ -107,8 +107,10 @@ const Link = ({ name, count, countstate, setCounstate }) => {
       onClick={() => {
         setCounstate(count);
       }}
-      className={` py-5 px-8 rounded-[4px] cursor-pointer text-[20px] ${
-        count == countstate ? "border-b-[5px] font-[600] border-orange-600" : ""
+      className={` py-5 px-8 rounded-[4px] sm:block flex items-center justify-center sm:w-auto w-[80%] cursor-pointer text-[20px] ${
+        count == countstate
+          ? "border-b-[5px] font-[600] border-orange-600"
+          : "  "
       } `}
     >
       {name}
