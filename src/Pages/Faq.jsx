@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Header from "../Components/Header";
 import Quest from "../Components/Quest";
 import Button from "../Components/Button";
+import { motion, AnimatePresence } from "framer-motion";
 
 function Faq() {
   const [faqs, setFaqs] = useState([
