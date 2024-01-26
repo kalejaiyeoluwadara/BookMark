@@ -4,6 +4,7 @@ import illus from "../assets/images/illustration-features-tab-1.svg";
 import illus1 from "../assets/images/illustration-features-tab-2.svg";
 import illus2 from "../assets/images/illustration-features-tab-3.svg";
 import Header from "../Components/Header";
+import { motion, AnimatePresence } from "framer-motion";
 function Feature() {
   const [countstate, setCounstate] = useState(0);
   const [items, setItem] = useState([
@@ -63,7 +64,22 @@ function Feature() {
         </nav>
 
         {/* Dynamic Content */}
-        <div className="flex w-full mb-8  mt-20 sm:gap-20 items-center justify-center">
+        <motion.div
+          layout
+          key={countstate}
+          initial={{
+            opacity: 0,
+            y: "100px",
+          }}
+          animate={{
+            opacity: 1,
+            y: 0,
+          }}
+          // transition={{
+          //   duration: 0.3,
+          // }}
+          className="flex w-full mb-8  mt-20 sm:gap-20 items-center justify-center"
+        >
           <section className="sm:w-[40%] flex justify-end  ">
             <img className="h-[300px]" src={items[countstate].img} alt="" />
           </section>
@@ -77,7 +93,7 @@ function Feature() {
             </p>
             <Button name={"More info"} blue={true} />
           </section>
-        </div>
+        </motion.div>
       </section>
     </div>
   );
