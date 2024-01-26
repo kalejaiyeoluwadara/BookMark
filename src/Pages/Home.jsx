@@ -4,7 +4,10 @@ import dot from "../assets/images/bg-dots.svg";
 import Button from "../Components/Button";
 function Home() {
   return (
-    <div className="w-screen h-[100vh] mt-4 bgi flex py-20 px-10 items-center justify-center">
+    <div
+      id="home"
+      className="w-screen h-[100vh] mt-4 bgi flex py-20 px-10 items-center justify-center"
+    >
       {/* Text content Div */}
       {/* <img className="absolute right-10 top-10" src={dot} alt="" /> */}
       <div className="sm:w-[40%] flex flex-col ">

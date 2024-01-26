@@ -31,7 +31,10 @@ function Faq() {
     },
   ]);
   return (
-    <div className="h-auto py-40 w-screen flex flex-col items-center justify-center ">
+    <div
+      id="faq"
+      className="h-auto py-40 w-screen flex flex-col items-center justify-center "
+    >
       <Header
         name={"Frequently Asked Questions"}
         content={`Here are some of our FAQs. If you have any other questions you’d like 

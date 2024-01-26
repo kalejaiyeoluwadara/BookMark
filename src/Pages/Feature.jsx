@@ -33,7 +33,10 @@ function Feature() {
     },
   ]);
   return (
-    <div className="h-[90vh] w-screen bgl flex flex-col items-center justify-center">
+    <div
+      id="features"
+      className="h-[90vh] w-screen flex flex-col items-center justify-center"
+    >
       {/* First Section */}
       <Header
         name={"Features"}

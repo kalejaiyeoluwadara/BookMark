@@ -5,7 +5,10 @@ import face from "../assets/images/icon-facebook.svg";
 import twiter from "../assets/images/icon-twitter.svg";
 function Footer() {
   return (
-    <div className="w-screen h-[15vh] bg-gray-900 flex justify-between items-center px-20  ">
+    <div
+      id="footer"
+      className="w-screen h-[15vh] bg-gray-900 flex justify-between items-center px-20  "
+    >
       <div className="flex gap-6">
         <img src={logo} alt="" />
         <ul className="flex justify-between items-center gap-5  ">

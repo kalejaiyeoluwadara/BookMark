@@ -2,7 +2,10 @@ import React from "react";
 
 function Contact() {
   return (
-    <div className="h-[50vh]  w-screen bg-blue-600 text-white flex flex-col items-center justify-center  ">
+    <div
+      id="contact"
+      className="h-[50vh]  w-screen bg-blue-600 text-white flex flex-col items-center justify-center  "
+    >
       <section className="flex flex-col gap-5">
         <p className="text-[20px] tracking-[10px] ">35,000+ already joined</p>
         <h2 className="font-[650] text-center w-[400px] text-[35px] ">
