@@ -7,11 +7,11 @@ function Footer() {
   return (
     <div
       id="footer"
-      className="w-screen h-[15vh] bg-gray-900 flex justify-between items-center px-20  "
+      className="w-screen sm:h-[15vh] h-[30vh] h-auto sm:flex-row flex-col bg-gray-900 flex justify-between items-center px-20  "
     >
-      <div className="flex gap-6">
+      <div className="flex sm:flex-row flex-col  gap-6">
         <img src={logo} alt="" />
-        <ul className="flex justify-between items-center gap-5  ">
+        <ul className="flex sm:flex-row flex-col  justify-between items-center gap-5  ">
           {[
             {
               name: "Features",
