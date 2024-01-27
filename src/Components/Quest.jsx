@@ -6,7 +6,7 @@ function Quest({ question, answer }) {
   return (
     <motion.div>
       <section className=" py-6 w-[85%] sm:w-[650px] border-t-2 border-opacity-25 border-gray-400 flex  sm:justify-between items-center">
-        <p className="sm:text-[20px] text-[18px] sm:text-start w-full text-center sm:w-auto  ">
+        <p className="sm:text-[20px] text-[18px] sm:text-start w-full  sm:w-auto  ">
           {question}
         </p>
         <img
