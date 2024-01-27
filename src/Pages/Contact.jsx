@@ -4,10 +4,12 @@ function Contact() {
   return (
     <div
       id="contact"
-      className="h-[50vh]  w-screen bg-blue-600 text-white flex flex-col items-center justify-center  "
+      className="sm:h-[50vh] h-[60vh]  w-screen bg-blue-600 text-white flex flex-col items-center justify-center  "
     >
       <section className="flex flex-col gap-5">
-        <p className="text-[20px] tracking-[10px] ">35,000+ already joined</p>
+        <p className="sm:text-[20px] text-[18px] text-center sm:text-start tracking-[8px] sm:tracking-[10px] ">
+          35,000+ already joined
+        </p>
         <h2 className="font-[650] text-center w-[400px] text-[35px] ">
           Stay up-to-date with what we’re doing
         </h2>
@@ -21,7 +23,7 @@ function Contact() {
 
 const Form = () => {
   return (
-    <div className="flex items-start justify-center mt-10 gap-5">
+    <div className="flex sm:flex-row flex-col items-center sm:items-start justify-center mt-10 gap-5">
       <div className="h-[70px] rounded-[3px] bg-red-600 ">
         <input
           className="outline-none text-black px-2 rounded-[4px] border-none bg-white h-[60px] w-[270px]  "
