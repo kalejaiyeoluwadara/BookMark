@@ -7,7 +7,7 @@ function Footer() {
   return (
     <div
       id="footer"
-      className="w-screen sm:h-[15vh] h-[30vh] h-auto sm:flex-row flex-col bg-gray-900 flex justify-between items-center px-20  "
+      className="w-screen sm:py-0 py-8 sm:h-[15vh] h-[35vh] h-auto sm:flex-row flex-col bg-gray-900 flex justify-between items-center px-20  "
     >
       <div className="flex sm:flex-row flex-col  gap-6">
         <img src={logo} alt="" />
