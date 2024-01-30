@@ -10,9 +10,11 @@ import Contact from "./Pages/Contact";
 import Footer from "./Pages/Footer";
 import { motion, AnimatePresence } from "framer-motion";
 import Reveal from "./reveal";
+import Menu from "./Components/Menu";
 const App = () => {
   return (
     <AnimatePresence>
+      <Menu />
       <Nav />
       <Reveal>
         <Home />
