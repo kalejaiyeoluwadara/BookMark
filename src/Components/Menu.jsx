@@ -27,7 +27,7 @@ function Menu() {
     },
   ]);
   return (
-    <div className="fixed top-0 left-0 bgg z-50 h-screen w-screen flex flex-col items-center justify-start ">
+    <div className="fixed top-0 left-0 bgg z-50 h-screen w-screen flex flex-col items-center  justify-start ">
       <div className="flex justify-between items-center w-full px-12 pt-12 ">
         <img src={logo} alt="logo" />
         <img src={cancel} alt="cancel" />
