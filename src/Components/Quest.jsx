@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 function Quest({ question, answer }) {
   const [isOPened, setIsOpened] = useState(false);
   return (
-    <motion.div>
+    <motion.div className="px-3">
       <section className=" py-6 w-[85%] sm:w-[650px] border-t-2 border-opacity-25 border-gray-400 flex  sm:justify-between items-center">
         <p className="sm:text-[20px] text-[18px] sm:text-start w-full  sm:w-auto  ">
           {question}
@@ -36,7 +36,7 @@ function Quest({ question, answer }) {
               height: 0,
             }}
           >
-            <p className="text-[20px] text-center sm:text-start mb-6 sm:w-[650px] opacity-80 ">
+            <p className="text-[20px] w-[85%] sm:text-start mb-6 sm:w-[650px] opacity-80 ">
               {answer}
             </p>
           </motion.section>

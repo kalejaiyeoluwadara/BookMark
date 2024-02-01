@@ -34,7 +34,7 @@ function Faq() {
   return (
     <div
       id="faq"
-      className="h-auto  py-10 w-screen flex flex-col items-center justify-center "
+      className="h-auto  py-10  w-screen flex flex-col items-center justify-center "
     >
       <Header
         name={"Frequently Asked Questions"}
@@ -43,7 +43,7 @@ function Faq() {
       />
 
       {/* Faqs */}
-      <section className="mt-10 flex flex-col ">
+      <section className="mt-10 flex  w-screen flex-col ">
         {faqs.map((item, id) => {
           const { question, answer } = item;
           return <Quest key={id} question={question} answer={answer} />;
