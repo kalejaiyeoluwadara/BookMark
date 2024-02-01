@@ -4,7 +4,7 @@ import logo from "../assets/images/logo-bookmark.svg";
 import nav from "../assets/images/icon-hamburger.svg";
 import { useGlobal } from "../context";
 function Nav() {
-  const { menu } = useGlobal();
+  const { menu, setMenu } = useGlobal();
   return (
     <div className="absolute z-40 sm:px-20 px-12 sm:h-[15vh] h-[12vh] top-0 left-0 w-screen bg-white flex items-center justify-between">
       <div>

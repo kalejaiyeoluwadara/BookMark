@@ -3,6 +3,7 @@ import logo from "../assets/images/logo-bookmark.svg";
 import face from "../assets/images/icon-facebook.svg";
 import twiter from "../assets/images/icon-twitter.svg";
 import cancel from "../assets/images/icon-close.svg";
+import { useGlobal } from "../context";
 function Menu() {
   const [links, setLinks] = useState([
     {
@@ -26,11 +27,12 @@ function Menu() {
       link: "#contact",
     },
   ]);
+  const { setMenu } = useGlobal();
   return (
     <div className="fixed top-0 left-0 bgg z-50 h-screen w-screen flex flex-col items-center  justify-start ">
       <div className="flex justify-between items-center w-full px-12 pt-12 ">
         <img src={logo} alt="logo" />
-        <img src={cancel} alt="cancel" />
+        <img onClick={() => [setMenu(false)]} src={cancel} alt="cancel" />
       </div>
       {/* Links */}
       <div className="flex text-white text-[22px] font-[500] mt-10  items-center justify-center flex-col w-screen ">
