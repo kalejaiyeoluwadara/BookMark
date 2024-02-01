@@ -11,10 +11,12 @@ import Footer from "./Pages/Footer";
 import { motion, AnimatePresence } from "framer-motion";
 import Reveal from "./reveal";
 import Menu from "./Components/Menu";
+import { useGlobal } from "./context";
 const App = () => {
+  const { menu } = useGlobal();
   return (
     <AnimatePresence>
-      <Menu />
+      {menu && <Menu />}
       <Nav />
       <Reveal>
         <Home />
