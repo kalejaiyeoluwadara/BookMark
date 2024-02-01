@@ -8,6 +8,9 @@ function Menu() {
         <img src={logo} alt="logo" />
         <img src={cancel} alt="cancel" />
       </div>
+      {/* Links */}
+      <div>{}</div>
+      {/* Footer */}
     </div>
   );
 }
