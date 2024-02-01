@@ -33,11 +33,18 @@ function Menu() {
         <img src={cancel} alt="cancel" />
       </div>
       {/* Links */}
-      <div className="flex text-white text-[24px] font-[500] mt-10 gap-10 items-center justify-center flex-col w-screen ">
+      <div className="flex text-white text-[24px] font-[500] mt-10  items-center justify-center flex-col w-screen ">
         {links.map((item, id) => {
-          const { name, speacial, link } = item;
+          const { name, special, link } = item;
           return (
-            <a className=" border-y border-white  " href={link}>
+            <a
+              className={` w-[85%] py-6 text-center ${
+                special
+                  ? "border-2 border-white"
+                  : " border-t border-opacity-20 border-white "
+              }  `}
+              href={link}
+            >
               {name}
             </a>
           );
