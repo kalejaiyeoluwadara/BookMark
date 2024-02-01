@@ -4,6 +4,7 @@ import face from "../assets/images/icon-facebook.svg";
 import twiter from "../assets/images/icon-twitter.svg";
 import cancel from "../assets/images/icon-close.svg";
 import { useGlobal } from "../context";
+import { motion } from "framer-motion";
 function Menu() {
   const [links, setLinks] = useState([
     {
@@ -29,7 +30,21 @@ function Menu() {
   ]);
   const { setMenu } = useGlobal();
   return (
-    <div className="fixed top-0 left-0 bgg z-50 h-screen w-screen flex flex-col items-center  justify-start ">
+    <motion.div
+      initial={{
+        y: "-100vh",
+      }}
+      animate={{
+        y: 0,
+      }}
+      exit={{
+        y: "-100vh",
+      }}
+      transition={{
+        duration: 0.7,
+      }}
+      className="fixed top-0 left-0 bgg z-50 h-screen w-screen flex flex-col items-center  justify-start "
+    >
       <div className="flex justify-between items-center w-full px-12 pt-12 ">
         <img src={logo} alt="logo" />
         <img onClick={() => [setMenu(false)]} src={cancel} alt="cancel" />
@@ -58,7 +73,7 @@ function Menu() {
           return <img src={log} key={id} alt="" />;
         })}
       </div>
-    </div>
+    </motion.div>
   );
 }
 

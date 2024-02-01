@@ -15,8 +15,8 @@ import { useGlobal } from "./context";
 const App = () => {
   const { menu } = useGlobal();
   return (
-    <AnimatePresence>
-      {menu && <Menu />}
+    <>
+      <AnimatePresence>{menu && <Menu />}</AnimatePresence>
       <Nav />
       <Reveal>
         <Home />
@@ -32,7 +32,7 @@ const App = () => {
       </Reveal>
       <Contact />
       <Footer />
-    </AnimatePresence>
+    </>
   );
 };
 export default App;
