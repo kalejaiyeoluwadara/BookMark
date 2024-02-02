@@ -68,7 +68,7 @@ function Menu() {
         })}
       </div>
       {/* Footer */}
-      <div className="absolute bottom-10 w-screen flex items-center justify-center gap-20">
+      <div className="absolute bottom-12 w-screen flex items-center justify-center gap-20">
         {[face, twiter].map((log, id) => {
           return <img src={log} key={id} alt="" />;
         })}
