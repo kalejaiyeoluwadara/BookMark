@@ -18,9 +18,7 @@ const App = () => {
     <>
       <AnimatePresence>{menu && <Menu />}</AnimatePresence>
       <Nav />
-      <Reveal>
-        <Home />
-      </Reveal>
+      <Home />
       <Reveal>
         <Feature />
       </Reveal>
