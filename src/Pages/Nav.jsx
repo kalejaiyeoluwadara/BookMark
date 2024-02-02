@@ -41,13 +41,13 @@ function Nav() {
           );
         })}
       </ul>
-      <div>
+      <div className="bm">
         <img
           onClick={() => {
             setMenu(true);
           }}
           src={nav}
-          className="cursor-pointer"
+          className="  cursor-pointer"
           alt=""
         />
       </div>

@@ -30,9 +30,15 @@ h3{
     background-repeat: no-repeat;
     background-position: left;
 }
+.bm{
+    display: none;
+}
 @media (max-width: 640px){
    .sm{
     display: none;
+   }
+   .bm{
+    display: flex;
    }
  
 }
