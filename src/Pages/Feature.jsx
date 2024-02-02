@@ -81,10 +81,14 @@ function Feature() {
           transition={{
             duration: 0.5,
           }}
-          className="flex w-full mb-8 sm:flex-row flex-col mt-20 sm:gap-20 items-center  justify-center"
+          className="flex w-full  mb-8 sm:flex-row flex-col mt-20 sm:gap-20 items-center  justify-center"
         >
-          <section className="sm:w-[40%]  flex  justify-end  ">
-            <img className="h-[300px]" src={items[countstate].img} alt="" />
+          <section className="sm:w-[40%] w-full sm:justify-normal justify-center  flex items-center sm:items-start  justify-end  ">
+            <img
+              className="sm:h-[300px] h-[200px] sm:w-auto w-[80%] "
+              src={items[countstate].img}
+              alt=""
+            />
           </section>
           <section className="flex sm:w-[50%] sm:gap-0  flex-col gap-3 items-center sm:items-start justify-center">
             <h3 className="font-[600] sm:mt-0 mt-6 sm:text-start text-center capitalize sm:text-[30px] text-[25px] ">
