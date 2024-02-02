@@ -36,7 +36,7 @@ function Quest({ question, answer }) {
               height: 0,
             }}
           >
-            <p className="text-[20px] w-[85%] sm:text-start mb-6 sm:w-[650px] opacity-80 ">
+            <p className="sm:text-[20px] text-[18px] w-[85%] sm:text-start mb-6 sm:w-[650px] opacity-[0.72] ">
               {answer}
             </p>
           </motion.section>
