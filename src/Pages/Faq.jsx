@@ -43,7 +43,7 @@ function Faq() {
       />
 
       {/* Faqs */}
-      <section className="mt-10 flex  w-screen items-center flex-col ">
+      <section className="mt-10 flex  w-screen sm:items-center flex-col ">
         {faqs.map((item, id) => {
           const { question, answer } = item;
           return <Quest key={id} question={question} answer={answer} />;
